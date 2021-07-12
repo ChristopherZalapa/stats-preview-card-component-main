@@ -7,27 +7,87 @@
 body {
 	background: hsl(233, 47%, 7%);
 	color: hsl(0, 0%, 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 .container {
 	display: flex;
+
 	padding: 200px;
 }
 
+/* Left Side */
+
 .left-side {
 	background-color: hsl(244, 38%, 16%);
+	padding: 55px;
+	width: 440px;
+	height: 350px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
 }
+
+h1 {
+	margin-bottom: 25px;
+	width: 340px;
+}
+
+span {
+	color: rgba(172, 91, 222);
+}
+
+.details {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-weight: 200;
+	margin-bottom: 70px;
+	width: 325px;
+	font-size: 13px;
+}
+
+.statsNums {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.statsNums > h3 {
+	margin-right: 75px;
+}
+
+.statTitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.statTitle > p {
+	margin-right: 50px;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 11px;
+	font-weight: 100;
+}
+
+/* Right Side */
 
 .right-side {
 	position: relative;
 	background-size: cover;
 }
 
+img {
+	width: 440px;
+	height: 350px;
+}
+
 .overlay {
 	position: absolute;
-	background: rgba(158, 85, 202, 0.7);
-	width: 540px;
-	height: 446px;
+	background: rgba(172, 91, 222, 0.7);
+	width: 440px;
+	height: 350px;
 	top: 0;
 	left: 0;
 }
